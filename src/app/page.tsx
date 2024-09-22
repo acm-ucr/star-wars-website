@@ -2,7 +2,6 @@ import About from "@/components/About";
 import Join from "@/components/Join";
 import Landing from "@/components/Landing";
 import What from "@/components/What";
-import { Joan } from "next/font/google";
 
 const Home = () => {
   return (
