@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 // two different ways to decalre types yet are the same thing
 
@@ -10,11 +11,11 @@ import React from "react";
 // const Button = ( {title, link}: props) => {
 const Button = ({ title, link }: { title: string; link: string }) => {
   return (
-    <div>
+    <Link href={link} className="rounded-xl bg-sw-gold-100 px-10 py-5">
       Button
       {title}
       {link}
-    </div>
+    </Link>
   );
 };
 
