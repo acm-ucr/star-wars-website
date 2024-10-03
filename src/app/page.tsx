@@ -7,9 +7,9 @@ const Home = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <Landing />
-      {/* <About />
+      <About />
       <What />
-      <Join /> */}
+      <Join />
     </div>
   );
 };
