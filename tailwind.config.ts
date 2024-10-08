@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        lora: ["var(--font-lora)"],
+      },
       colors: {
         sw: {
           "gold-100": "#D09742",
