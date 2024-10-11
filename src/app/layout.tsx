@@ -1,9 +1,10 @@
 import "./globals.css";
-import { Nunito } from "next/font/google";
+import { Lora, Nunito } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
+const lora = Lora({ subsets: ["latin"] });
 const nunito = Nunito({
   subsets: ["latin"],
   display: "swap",
@@ -23,7 +24,9 @@ type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
-      <body className={`${nunito.variable} h-full w-full font-nunito`}>
+      <body
+        className={`${lora.className} ${nunito.variable} h-full w-full bg-black font-nunito text-white`}
+      >
         <ReactQueryClientProvider>
           <Navigation />
           {children}
