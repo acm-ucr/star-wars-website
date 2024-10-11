@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         lora: ["var(--font-lora)"],
+        nunito: ["var(--nunito-font)", "sans-serif"],
       },
       colors: {
         sw: {
