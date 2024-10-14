@@ -17,7 +17,7 @@ const Header = ({ title }: { title: string }) => {
       </div>
 
       <div className="absolute top-[28%] w-full text-center">
-        <header className="bg-gradient-to-b from-[#D09742] via-[#FFDA7C] to-[#6A4D22] bg-clip-text font-nunito text-6xl font-bold text-transparent">
+        <header className="bg-gradient-to-b from-sw-gold-100 via-sw-white to-sw-gold-200 bg-clip-text font-nunito text-6xl font-bold text-transparent">
           {title}
         </header>
       </div>
