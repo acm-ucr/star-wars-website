@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        nunito: ["var(--nunito-font)", "sans-serif"],
+      },
       colors: {
         sw: {
           "gold-100": "#D09742",

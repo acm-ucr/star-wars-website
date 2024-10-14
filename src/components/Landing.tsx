@@ -3,9 +3,10 @@ import Button from "./Button";
 
 const Landing = () => {
   return (
-    <div className="flex flex-col">
+    <div>
       Landing
-      <Button title={"This is a title"} link={"/about"} />
+      <Button title={"JOIN"} link={"/about"} />
+      <Button title={"LEARN MORE"} link={"/about"} />
     </div>
   );
 };
