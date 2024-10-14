@@ -10,7 +10,7 @@ const What = () => {
             {" "}
             Forge the Future
           </h2>
-          <p className="font-nunito mb-6 w-2/5 rounded-sm text-lg text-white">
+          <p className="mb-6 w-2/5 rounded-sm font-nunito text-lg text-white">
             {" "}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
