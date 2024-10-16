@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Button from "./Button";
 import swLogo from "@/public/swLOGO.svg";
 
 const Landing = () => {
@@ -11,6 +12,10 @@ const Landing = () => {
         </h1>
         <div className="flex items-center justify-center">
           <Image src={swLogo} alt="UCR SWC Logo" />
+        </div>
+        <div className="flex flex-row justify-center gap-5 py-5">
+          <Button title="Join" link="/" />
+          <Button title="Join" link="/" />
         </div>
       </div>
     </div>
