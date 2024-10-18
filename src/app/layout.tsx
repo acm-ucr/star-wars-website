@@ -5,6 +5,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 const lora = Lora({ subsets: ["latin"] });
+
 const nunito = Nunito({
   subsets: ["latin"],
   display: "swap",
