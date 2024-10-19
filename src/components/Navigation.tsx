@@ -21,10 +21,10 @@ const Navigation = () => {
         />
       </Link>
       <div className="flex items-center justify-center gap-4 font-lora text-base font-bold text-white md:gap-6 md:text-xl lg:gap-10 lg:text-3xl">
-        <Image src={navframe} alt="" className="absolute w-[65%]" />
+        <Image src={navframe} alt="" className="absolute -z-10 w-[65%]" />
 
         {ITEMS.map((item, index) => (
-          <>
+          <div className="relative">
             <Link
               key={index}
               href={item.link}
@@ -39,7 +39,7 @@ const Navigation = () => {
             {pathname === item.link && (
               <div className="absolute -bottom-3 h-1.5 w-full rounded-full bg-gradient-to-r from-sw-gold-100 via-sw-white to-[#905803]" />
             )}
-          </>
+          </div>
         ))}
       </div>
       <Link
