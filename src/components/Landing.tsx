@@ -14,8 +14,8 @@ const Landing = () => {
           <Image src={swLogo} alt="UCR SWC Logo" />
         </div>
         <div className="flex flex-row justify-center gap-5 py-5">
-          <Button title="Join" link="/" />
-          <Button title="Join" link="/" />
+          <Button title={"JOIN"} link={"/about"} />
+          <Button title={"LEARN MORE"} link={"/about"} />
         </div>
       </div>
     </div>
