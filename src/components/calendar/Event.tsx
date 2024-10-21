@@ -6,7 +6,7 @@ const Events = () => {
     <div className="flex w-full">
       <div className="m-[5%] grid w-full grid-cols-3 gap-x-[10%] gap-y-[20%]">
         {eventList.map((list, index) => (
-          <div key={index} className="">
+          <div key={index}>
             <EventCard
               key={index}
               name={list.eventName}
