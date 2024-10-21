@@ -20,11 +20,11 @@ const EventCard = ({
           {name}
         </span>
       </div>
-      <div className="flex flex-col justify-center text-center">
-        <span className="text-3xl font-semibold text-white">{date}</span>
-        <span className="text-3xl font-semibold text-white">{time}</span>
-        <span className="text-3xl font-semibold text-white">{location}</span>
-        <Image src={logo} alt="Logo" className="absolute pt-20" />
+      <div className="flex flex-col justify-center text-center text-3xl font-semibold text-white">
+        <Image src={logo} alt="Logo" className="absolute ml-2 mt-24 bg-black" />
+        <div>{date}</div>
+        <div>{time}</div>
+        <div>{location}</div>
       </div>
     </div>
   );
