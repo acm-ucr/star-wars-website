@@ -1,43 +1,43 @@
 import React from "react";
+import mediumFrame from "@/public/frame/joinframe1.svg";
+import smallFrame from "@/public/frame/smallframe.svg";
+import star from "@/public/frame/star.svg";
+import discord from "@/public/frame/discord.svg";
+import instagram from "@/public/frame/instagram.svg";
+import email from "@/public/frame/email.svg";
+import highlander from "@/public/frame/highlander.svg";
 
 const Join = () => {
   return (
     <div className="relative bg-black bg-gradient-to-b from-[#241d3b] to-black py-[90px] text-center">
-      {/* Content Section */}
       <div className="relative z-10">
-        <h1 className="font-nunito text-[36px]">Join</h1>
+        <h1 className="font-nunito text-[36px] text-sw-gold-100">Join</h1>
 
         <div className="relative inline-block">
-          {/* Medium Frame */}
           <img
-            src="/frame/joinframe1.svg"
+            src={mediumFrame.src}
             alt="Medium Frame"
             className="h-[588px] w-[1569px]"
           />
 
-          {/* Dark Gradient Overlay for Text - Contained within the small frame */}
           <div className="pointer-events-none absolute left-1/2 top-[-54px] z-0 h-[125px] w-[588px] -translate-x-1/2 transform bg-gradient-to-b from-[#15121A] to-[#675980] opacity-100"></div>
 
-          {/* Small Frame - Positioned on top of the Medium Frame */}
           <img
-            src="/frame/smallframe.svg"
+            src={smallFrame.src}
             alt="Small Frame"
             className="absolute left-1/2 top-[-55px] z-10 h-[126.8px] w-[670.53px] -translate-x-1/2 transform"
           />
 
-          {/* Star Icon */}
           <img
-            src="/frame/star.svg"
+            src={star.src}
             alt="Star"
             className="absolute left-1/2 top-[-65px] z-20 h-[26px] w-[23px] -translate-x-1/2 transform"
           />
 
-          {/* Text inside Small Frame */}
-          <div className="absolute left-1/2 top-[1%] z-20 -translate-x-1/2 -translate-y-1/2 transform bg-gradient-to-b from-[#D09742] via-[#FFDA7C] to-[#6A4D22] bg-clip-text font-nunito text-[48px] text-transparent">
+          <div className="absolute left-1/2 top-[1%] z-20 -translate-x-1/2 -translate-y-1/2 transform bg-gradient-to-b from-sw-gold-200 via-sw-gold-100 to-sw-gold-200 bg-clip-text text-transparent text-[48px] font-nunito">
             JOIN THE GALAXY
           </div>
 
-          {/* White Text Block */}
           <div className="absolute left-1/2 top-[150px] z-10 w-[55%] -translate-x-1/2 transform font-nunito text-[20px] leading-[1.6] text-white">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -46,52 +46,47 @@ const Join = () => {
           </div>
         </div>
 
-        {/* Icons Section */}
         <div className="mt-[-160px] flex justify-center gap-[90px]">
-          {/* Discord Icon */}
           <div className="text-center">
             <img
-              src="/frame/discord.svg"
+              src={discord.src}
               alt="Discord"
               className="h-[50px] w-[50px]"
             />
-            <div className="-ml-[2px] mt-[8px] font-nunito text-[#D0A660]">
+            <div className="-ml-[2px] mt-[8px] font-nunito text-sw-gold-100">
               Discord
             </div>
           </div>
 
-          {/* Instagram Icon */}
           <div className="text-center">
             <img
-              src="/frame/instagram.svg"
+              src={instagram.src}
               alt="Instagram"
               className="h-[50px] w-[50px]"
             />
-            <div className="-ml-[9px] mt-[8px] font-nunito text-[#D0A660]">
+            <div className="-ml-[9px] mt-[8px] font-nunito text-sw-gold-100">
               Instagram
             </div>
           </div>
 
-          {/* Email Icon */}
           <div className="text-center">
             <img
-              src="/frame/email.svg"
+              src={email.src}
               alt="Email"
               className="h-[50px] w-[50px]"
             />
-            <div className="-ml-[1px] mt-[8px] font-nunito text-[#D0A660]">
+            <div className="-ml-[1px] mt-[8px] font-nunito text-sw-gold-100">
               Email
             </div>
           </div>
 
-          {/* Highlander Icon */}
           <div className="text-center">
             <img
-              src="/frame/highlander.svg"
+              src={highlander.src}
               alt="Highlander"
               className="h-[50px] w-[50px]"
             />
-            <div className="-ml-[10px] mt-[8px] font-nunito text-[#D0A660]">
+            <div className="-ml-[10px] mt-[8px] font-nunito text-sw-gold-100">
               Highlander
             </div>
           </div>
