@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import mediumFrame from "@/public/frame/joinframe1.svg";
 import smallFrame from "@/public/frame/smallframe.svg";
 import star from "@/public/frame/star.svg";
@@ -14,27 +15,27 @@ const Join = () => {
         <h1 className="font-nunito text-[36px] text-sw-gold-100">Join</h1>
 
         <div className="relative inline-block">
-          <img
-            src={mediumFrame.src}
+          <Image
+            src={mediumFrame}
             alt="Medium Frame"
             className="h-[588px] w-[1569px]"
           />
 
-          <div className="pointer-events-none absolute left-1/2 top-[-54px] z-0 h-[125px] w-[588px] -translate-x-1/2 transform bg-gradient-to-b from-[#15121A] to-[#675980] opacity-100"></div>
+          <div className="pointer-events-none absolute left-1/2 top-[-54px] z-0 h-[125px] w-[588px] -translate-x-1/2 transform rounded-lg bg-gradient-to-b from-[#15121A] to-[#675980] opacity-100"></div>
 
-          <img
-            src={smallFrame.src}
+          <Image
+            src={smallFrame}
             alt="Small Frame"
             className="absolute left-1/2 top-[-55px] z-10 h-[126.8px] w-[670.53px] -translate-x-1/2 transform"
           />
 
-          <img
-            src={star.src}
+          <Image
+            src={star}
             alt="Star"
             className="absolute left-1/2 top-[-65px] z-20 h-[26px] w-[23px] -translate-x-1/2 transform"
           />
 
-          <div className="absolute left-1/2 top-[1%] z-20 -translate-x-1/2 -translate-y-1/2 transform bg-gradient-to-b from-sw-gold-200 via-sw-gold-100 to-sw-gold-200 bg-clip-text font-nunito text-[48px] text-transparent">
+          <div className="absolute left-1/2 top-[1%] z-20 -translate-x-1/2 -translate-y-1/2 transform bg-gradient-to-b from-sw-gold-100 via-sw-white to-sw-gold-200 bg-clip-text font-nunito text-[50px] font-bold text-transparent">
             JOIN THE GALAXY
           </div>
 
@@ -48,41 +49,37 @@ const Join = () => {
 
         <div className="mt-[-160px] flex justify-center gap-[90px]">
           <div className="text-center">
-            <img
-              src={discord.src}
-              alt="Discord"
-              className="h-[50px] w-[50px]"
-            />
-            <div className="-ml-[2px] mt-[8px] font-nunito text-sw-gold-100">
+            <Image src={discord} alt="Discord" className="h-[50px] w-[50px]" />
+            <div className="-ml-[3px] mt-[8px] bg-gradient-to-b from-sw-gold-100 via-sw-white to-sw-gold-200 bg-clip-text font-nunito font-bold text-transparent">
               Discord
             </div>
           </div>
 
           <div className="text-center">
-            <img
-              src={instagram.src}
+            <Image
+              src={instagram}
               alt="Instagram"
               className="h-[50px] w-[50px]"
             />
-            <div className="-ml-[9px] mt-[8px] font-nunito text-sw-gold-100">
+            <div className="-ml-[11px] mt-[8px] bg-gradient-to-b from-sw-gold-100 via-sw-white to-sw-gold-200 bg-clip-text font-nunito font-bold text-transparent">
               Instagram
             </div>
           </div>
 
           <div className="text-center">
-            <img src={email.src} alt="Email" className="h-[50px] w-[50px]" />
-            <div className="-ml-[1px] mt-[8px] font-nunito text-sw-gold-100">
+            <Image src={email} alt="Email" className="h-[50px] w-[50px]" />
+            <div className="-ml-[2px] mt-[8px] bg-gradient-to-b from-sw-gold-100 via-sw-white to-sw-gold-200 bg-clip-text font-nunito font-bold text-transparent">
               Email
             </div>
           </div>
 
           <div className="text-center">
-            <img
-              src={highlander.src}
+            <Image
+              src={highlander}
               alt="Highlander"
               className="h-[50px] w-[50px]"
             />
-            <div className="-ml-[10px] mt-[8px] font-nunito text-sw-gold-100">
+            <div className="-ml-[11px] mt-[8px] bg-gradient-to-b from-sw-gold-100 via-sw-white to-sw-gold-200 bg-clip-text font-nunito font-bold text-transparent">
               Highlander
             </div>
           </div>
