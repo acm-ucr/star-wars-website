@@ -5,7 +5,7 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <Gallery />
+      <Gallery title="GALLERY" />
       <Creation />
     </div>
   );
