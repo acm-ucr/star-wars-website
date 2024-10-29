@@ -14,14 +14,18 @@ const EventCard = ({
   logo: string;
 }) => {
   return (
-    <div className="flex flex-col border-2 border-white m-10">
+    <div className="m-10 flex flex-col border-2 border-white">
       <div className="flex justify-center bg-sw-gold-100 bg-gradient-to-r from-sw-gold-100 via-sw-white to-sw-gold-200">
-        <span className="my-[5%] sm:text-base md:text-xl lg:text-3xl font-semibold text-white">
+        <span className="my-[5%] font-semibold text-white sm:text-base md:text-xl lg:text-3xl">
           {name}
         </span>
       </div>
-      <div className="flex flex-col justify-center text-center sm:text-base md:text-xl lg:text-3xl font-semibold text-white relative m-2">
-        <Image src={logo} alt="Logo" className="absolute -bottom-6 left-2 bg-black" />
+      <div className="relative m-2 flex flex-col justify-center text-center font-semibold text-white sm:text-base md:text-xl lg:text-3xl">
+        <Image
+          src={logo}
+          alt="Logo"
+          className="absolute -bottom-6 left-2 bg-black"
+        />
         <div>{date}</div>
         <div>{time}</div>
         <div>{location}</div>
