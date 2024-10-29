@@ -5,7 +5,7 @@ import Title from "@/components/Title";
 
 const Gallery = ({ title }: { title: string }) => {
   return (
-    <div className="relative flex h-screen items-center justify-center">
+    <div className="relative flex items-center justify-center">
       <Image
         src={largeFrame}
         alt="largeFrame"
