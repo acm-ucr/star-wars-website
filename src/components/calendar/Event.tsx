@@ -4,9 +4,9 @@ import { eventList } from "@/data/event";
 const Events = () => {
   return (
     <div className="flex w-full">
-      <div className="flex flex-wrap w-full gap-0">
+      <div className="flex w-full flex-wrap gap-0">
         {eventList.map((list, index) => (
-          <div key={index} className="lg:w-1/3 sm:w-1/2">
+          <div key={index} className="sm:w-1/2 lg:w-1/3">
             <EventCard
               key={index}
               name={list.eventName}
