@@ -9,10 +9,7 @@ const Creation = () => {
       <div className="flex w-full flex-wrap justify-center gap-20">
         {ITEMS.map((item, index) => (
           <div key={index} className="w-1/4 sm:w-1/4">
-            <Card
-              topText={item.topText}
-              bottomText={item.bottomText}
-            />
+            <Card topText={item.topText} bottomText={item.bottomText} />
           </div>
         ))}
       </div>
