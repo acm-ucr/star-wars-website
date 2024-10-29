@@ -1,24 +1,27 @@
 "use client";
 import { Component, useState } from "react";
 //import Events from "./Events";
-import Filter from "@/components/./Filter";
-import { EVENTS } from "@/data/./filters";
+import Filter from "@/components/Filter";
+import { FILTERS } from "@/data/filters";
+import { MESSAGE } from "@/data/filterMessage";
+
 
 const Wrapped = () => {
-  const [component, setComponent] = useState("calendar");
+  const [component, setComponent] = useState("upcoming");
 
-  // const handleFilterChange = ({component}: {component: Component}) => {
-  //   setComponent(component);
-  // };
+  const handleFilterChange = ({component}: {component: Component}) => {
+    setComponent(component);
+  };
 
   return (
     <div>
       <Filter
-        filters={EVENTS}
-        // onChange={handleFilterChange}
+        filters={FILTERS}
+        message={MESSAGE}
+        onChange={handleFilterChange}
       />
-      {component === "upcoming" && <Events type="upcoming" />}
-      {component === "past" && <Events type="past" />}
+      {/* {component === "upcoming" && <Events type="upcoming" />}
+      {component === "past" && <Events type="past" />} */}
     </div>
   );
 };
