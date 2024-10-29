@@ -8,9 +8,8 @@ const Creation = () => {
       <Header title={"CREATION"} />
       <div className="flex w-full flex-wrap justify-center gap-20">
         {ITEMS.map((item, index) => (
-          <div className="w-1/4 sm:w-1/4">
+          <div key={index} className="w-1/4 sm:w-1/4">
             <Card
-              key={index}
               topText={item.topText}
               bottomText={item.bottomText}
             />
