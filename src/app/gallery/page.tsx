@@ -4,7 +4,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="flex gap-5">
+    <div className="flex flex-col gap-5">
       <Gallery title="GALLERY" />
       <Creation />
     </div>
