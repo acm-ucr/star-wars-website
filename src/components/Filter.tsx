@@ -5,17 +5,17 @@ import Image, { StaticImageData } from "next/image";
 const Filter = ({
   filters,
   message,
-  //onChange,
+  onChange,
 }: {
   filters: Array<StaticImageData>;
   message: Array<string>;
-  //onChange: (filter: StaticImageData) => void;
+  onChange: (filter: StaticImageData) => void;
 }) => {
   const [selectedFilter, setSelectedFilter] = useState(filters[0]);
-  const handleClick = ({ filter }: { filter: StaticImageData }) => {
+  const handleClick = (filter: StaticImageData) => {
     setSelectedFilter(filter);
     console.log(filter);
-    //onChange(filter);
+    onChange(filter);
   };
   return (
     <div
