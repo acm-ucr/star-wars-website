@@ -24,9 +24,8 @@ const Navigation = () => {
         <Image src={navframe} alt="" className="absolute -z-10 w-[65%]" />
 
         {ITEMS.map((item, index) => (
-          <div className="relative">
+          <div key={index} className="relative">
             <Link
-              key={index}
               href={item.link}
               className={`hover:bg-gradient-to-b hover:from-[#DDA82A] hover:via-sw-white hover:to-[#905803] hover:bg-clip-text hover:text-transparent ${
                 pathname === item.link
