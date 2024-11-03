@@ -1,28 +1,23 @@
 "use client";
 //import { Component } from "Component, useState";
-//import Events from "./Events";
+//import Event from "./Event"
 import { useState } from "react";
-import Filter from "@/components/Filter";
+import Filter from "./Filter";
 import { FILTERS } from "@/data/filters";
-import { MESSAGE } from "@/data/filterMessage";
-import { StaticImageData } from "next/image";
+import { Background } from "@/data/Background";
 
 const Wrapped = () => {
-   const [component, setComponent] = useState<StaticImageData>(FILTERS[0]);
+  const [component, setComponent] = useState<Background>(FILTERS[0]);
 
-  const handleFilterChange = (filter: StaticImageData) => {
-     setComponent(filter);
-   };
+  const handleFilterChange = (component: Background) => {
+    setComponent(component);
+  };
 
   return (
     <div>
-      <Filter
-        filters={FILTERS}
-        message={MESSAGE}
-        onChange={handleFilterChange}
-      />
-      {component === "upcoming" && <Events type="upcoming" />}
-      {component === "past" && <Events type="past" />} 
+      <Filter filters={FILTERS} onChange={handleFilterChange} />
+      {component === FILTERS[0] && "no upcoming events" /*<Event />*/}
+      {component === FILTERS[1] && "no past events" /*<Event />*/}
     </div>
   );
 };

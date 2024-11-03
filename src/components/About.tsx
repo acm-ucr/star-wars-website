@@ -5,7 +5,7 @@ import Title from "./Title";
 
 const About = () => {
   return (
-    <div className="flex w-full flex-row gap-x-[10%]">
+    <div className="relative flex w-full flex-row gap-x-[10%]">
       <div className="flex w-auto flex-col gap-y-4 pl-[12%] pt-[9%]">
         <Title text="ABOUT" />
         <Image src={swLogo} alt="swLogo" className="flex w-full max-w-64" />
