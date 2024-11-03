@@ -24,9 +24,8 @@ const Navigation = () => {
         <Image src={navframe} alt="" className="absolute -z-10 w-[65%]" />
 
         {ITEMS.map((item, index) => (
-          <div className="relative">
+          <div key={index} className="relative">
             <Link
-              key={index}
               href={item.link}
               className={`hover:bg-gradient-to-b hover:from-[#DDA82A] hover:via-sw-white hover:to-[#905803] hover:bg-clip-text hover:text-transparent ${
                 pathname === item.link
@@ -44,7 +43,7 @@ const Navigation = () => {
       </div>
       <Link
         href="/join"
-        className="relative mb-2 flex items-center justify-center hover:opacity-75"
+        className="relative z-10 mb-2 flex items-center justify-center hover:opacity-75"
       >
         <Image src={navjoinframe} alt="jaj" className="mr-10 w-2/3" />
         <p className="absolute left-[27%] mt-4 bg-gradient-to-b from-[#DDA82A] via-sw-white to-[#905803] bg-clip-text font-lora text-base font-bold text-transparent md:text-2xl lg:text-4xl">
