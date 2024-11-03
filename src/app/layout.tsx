@@ -3,6 +3,7 @@ import { Lora, Nunito } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Stars from "@/components/stars";
 
 const lora = Lora({ subsets: ["latin"] });
 
@@ -26,13 +27,14 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
       <body
-        className={`${lora.className} ${nunito.variable} h-full w-full bg-black font-nunito text-white`}
+        className={`${lora.className} ${nunito.variable} relative h-full w-full bg-black font-nunito text-white`}
       >
         <ReactQueryClientProvider>
           <Navigation />
           {children}
+          <Footer />
         </ReactQueryClientProvider>
-        <Footer />
+        <Stars />
       </body>
     </html>
   );

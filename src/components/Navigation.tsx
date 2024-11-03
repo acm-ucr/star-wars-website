@@ -43,7 +43,7 @@ const Navigation = () => {
       </div>
       <Link
         href="/join"
-        className="relative mb-2 flex items-center justify-center hover:opacity-75"
+        className="relative z-10 mb-2 flex items-center justify-center hover:opacity-75"
       >
         <Image src={navjoinframe} alt="jaj" className="mr-10 w-2/3" />
         <p className="absolute left-[27%] mt-4 bg-gradient-to-b from-[#DDA82A] via-sw-white to-[#905803] bg-clip-text font-lora text-base font-bold text-transparent md:text-2xl lg:text-4xl">
