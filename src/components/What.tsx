@@ -5,7 +5,7 @@ import Header from "./Header";
 const What = () => {
   return (
     <>
-      <div className="flex w-full">
+      <div className="relative flex w-full">
         <div className="w-s flex flex-col gap-y-4 pl-[8%] pt-[9%] text-right">
           <div className="mr-[8%] flex w-auto flex-col gap-9">
             <Title text="Forge The Future" />
