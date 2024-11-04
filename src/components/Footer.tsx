@@ -17,7 +17,7 @@ const Footer = () => {
               <Link
                 target={link.target}
                 href={link.href}
-                className="flex flex-row duration-150 hover:scale-110 sm:text-3xl lg:text-5xl"
+                className="flex flex-row text-3xl duration-150 hover:scale-110 md:text-4xl lg:text-5xl"
               >
                 <link.icon />
               </Link>
