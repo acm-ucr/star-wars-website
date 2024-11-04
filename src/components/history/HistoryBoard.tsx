@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Card from "../Card";
 import { ITEMS } from "@/data/history";
-import mediumHeaderFrame from "@/public/frame/mediumframeheader.svg"; 
+import mediumHeaderFrame from "@/public/frame/mediumframeheader.svg";
 import starImage from "@/public/starframeIcon.svg";
 
 const PastBoardMembers = () => {
