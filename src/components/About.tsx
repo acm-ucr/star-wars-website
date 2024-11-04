@@ -5,7 +5,7 @@ import Title from "./Title";
 
 const About = () => {
   return (
-    <div className="flex w-full flex-row gap-x-[10%]">
+    <div className="relative flex w-full flex-row gap-x-[10%]">
       <div className="flex w-auto flex-col gap-y-4 pl-[12%] pt-[9%]">
         <p className="ml-2 bg-gradient-to-b from-sw-gold-100 via-sw-white to-sw-gold-200 bg-clip-text font-bold text-transparent sm:text-4xl md:text-5xl lg:text-6xl">
           ABOUT
