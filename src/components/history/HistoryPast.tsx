@@ -8,7 +8,6 @@ import starImage from "@/public/starframeIcon.svg";
 const PastJediMasters = () => {
   return (
     <div className="w-full">
-    
       <div className="relative my-10 flex justify-center">
         <Image
           src={mediumHeaderFrame}
@@ -24,6 +23,7 @@ const PastJediMasters = () => {
           </header>
         </div>
       </div>
+
       <div className="flex w-full flex-wrap justify-center gap-20">
         {JEDIITEMS.map((item, index) => (
           <div key={index} className="w-1/4 sm:w-1/4">
