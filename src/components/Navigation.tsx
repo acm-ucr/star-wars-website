@@ -9,6 +9,7 @@ import navframe from "@/public/frame/navframe.svg";
 import navjoinframe from "@/public/frame/navjoinframe.svg";
 import { Menu } from "lucide-react";
 import { useState } from "react";
+import Stars from "@/components/stars";
 
 const Navigation = () => {
   const pathname = usePathname();
@@ -58,27 +59,40 @@ const Navigation = () => {
       </div>
 
       {/*Mobile*/}
-      <div className="flex w-full items-center justify-end md:hidden">
+      <div className="flex w-full items-center justify-end pr-4 md:hidden">
+        <Link
+          href="/"
+          className="flex w-full justify-center"
+          onClick={() => setIsOpen(false)}
+        >
+          <Image src={swIcon} alt="swLOGO" className="mr-auto w-1/6 pl-4" />
+        </Link>
         <Menu className="cursor-pointer" onClick={() => setIsOpen(!isOpen)} />
       </div>
       {isOpen && (
-        <div className="absolute flex w-full flex-col items-center justify-center gap-4 bg-gradient-to-t from-sw-gold-100 to-sw-gold-200 pb-8 pt-8 font-lora text-base font-bold text-white opacity-100 shadow-2xl">
-          <Link href="/" className="flex items-center justify-center">
-            HOME
-          </Link>
+        <div className="absolute z-20 flex w-full flex-col items-center justify-center gap-4 bg-black bg-opacity-100 pb-8 pt-2 font-lora text-xl font-bold text-sw-gold-100">
           {ITEMS.map((item, index) => (
-            <div key={index} className="relative">
-              <Link href={item.link}>{item.name}</Link>
+            <div
+              key={index}
+              className="relative bg-gradient-to-b from-sw-gold-100 via-sw-white to-sw-gold-200 bg-clip-text text-transparent"
+            >
+              <Link href={item.link} onClick={() => setIsOpen(false)}>
+                {item.name}
+              </Link>
+              <div className="flex h-[3px] w-full rounded-lg bg-gradient-to-r" />
             </div>
           ))}
           <Link
             href="/join"
-            className="border-1 relative z-10 mb-2 flex items-center justify-center"
+            className="flex items-center justify-center"
+            onClick={() => setIsOpen(false)}
           >
-            <p className="absolute mt-2 mt-4 w-fit border-4 border-white p-1 px-2 text-center font-lora text-base font-bold text-white">
+            <Image src={navjoinframe} alt="navframe" className="w-3/6" />
+            <p className="absolute mt-2 bg-gradient-to-b from-sw-gold-100 via-sw-white to-sw-gold-200 bg-clip-text text-transparent">
               JOIN
             </p>
           </Link>
+          <Stars />
         </div>
       )}
     </div>
