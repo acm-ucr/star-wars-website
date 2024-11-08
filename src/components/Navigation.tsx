@@ -9,7 +9,6 @@ import navframe from "@/public/frame/navframe.svg";
 import navjoinframe from "@/public/frame/navjoinframe.svg";
 import { Menu } from "lucide-react";
 import { useState } from "react";
-import Stars from "@/components/stars";
 
 const Navigation = () => {
   const pathname = usePathname();
@@ -79,7 +78,9 @@ const Navigation = () => {
               <Link href={item.link} onClick={() => setIsOpen(false)}>
                 {item.name}
               </Link>
-              <div className="flex h-[3px] w-full rounded-lg bg-gradient-to-r" />
+              {pathname === item.link && (
+                <div className="absolute bottom-0 h-[3px] w-full rounded-full bg-gradient-to-r from-sw-gold-100 via-sw-white to-sw-gold-200" />
+              )}
             </div>
           ))}
           <Link
@@ -92,7 +93,6 @@ const Navigation = () => {
               JOIN
             </p>
           </Link>
-          <Stars />
         </div>
       )}
     </div>
