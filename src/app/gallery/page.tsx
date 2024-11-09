@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div>
       <Gallery />
-      <Cosplay />
+      <Cosplay name="NAME" character="CHARACTER" />
     </div>
   );
 };
