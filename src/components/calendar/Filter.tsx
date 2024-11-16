@@ -13,8 +13,6 @@ const Filter = ({
 }) => {
   const [selectedFilter, setSelectedFilter] = useState(filters[0]);
   const handleClick = (filter: Background) => {
-    setSelectedFilter(filter);
-    console.log(filter);
     onChange(filter);
     if (filter == filters[1]) {
       if (filter.Image == frame) {
