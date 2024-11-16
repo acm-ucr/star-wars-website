@@ -9,6 +9,7 @@ const Cosplay = ({ name, character }: { name: string; character: string }) => {
   return (
     <div className="flex flex-col items-center gap-4">
       <Image src={cosplaysframe} alt="cosplay frame" width={370} height={500} />
+
       <div className="mx-5 grid grid-cols-3 gap-4">
         {items.map((_, index) => (
           <div key={index} className="p-4">
