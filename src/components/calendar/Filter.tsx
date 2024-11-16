@@ -14,6 +14,7 @@ const Filter = ({
   const [selectedFilter, setSelectedFilter] = useState(filters[0]);
   const handleClick = (filter: Background) => {
     onChange(filter);
+    setSelectedFilter(filter);
     if (filter == filters[1]) {
       if (filter.Image == frame) {
         const temp = filters[1].Image;
