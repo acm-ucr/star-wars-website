@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { socialMedia } from "@/data/footerLinks";
+import { socialMedia } from "@/data/footer";
 import Logo from "@/public/swIcon.svg";
 
 const Footer = () => {
