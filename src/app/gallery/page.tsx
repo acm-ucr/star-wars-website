@@ -7,7 +7,7 @@ const page = () => {
   return (
     <div className="flex flex-col gap-5">
       <Gallery title="GALLERY" />
-      <Cosplay name="NAME" character="CHARACTER" />
+      <Cosplay />
       <Creation />
     </div>
   );

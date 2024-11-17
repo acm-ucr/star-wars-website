@@ -4,9 +4,7 @@ import cosplaysframe from "@/public/frame/cosplaysframe.svg";
 import Card from "../Card";
 import { ITEMS } from "@/data/board";
 
-const Cosplay = ({ name, character }: { name: string; character: string }) => {
-  const items = Array(6).fill(null);
-
+const Cosplay = () => {
   return (
     <div className="flex flex-col items-center gap-10">
       <Image src={cosplaysframe} alt="cosplay frame" width={370} height={500} />
