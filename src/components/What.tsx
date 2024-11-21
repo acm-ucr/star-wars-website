@@ -5,20 +5,19 @@ import Header from "./Header";
 const What = () => {
   return (
     <>
-      <div className="relative flex w-full">
-        <div className="w-s flex flex-col gap-y-4 pl-[8%] pt-[9%] text-right">
-          <div className="mr-[8%] flex w-auto flex-col gap-9">
+      <div className="relative flex w-full flex-col md:flex-row">
+        <div className="flex flex-col gap-y-4 px-4 pt-6 text-center md:w-1/2 md:pl-[8%] md:pt-[9%]">
+          <div className="flex flex-col gap-6 md:gap-9">
             <Title text="Forge The Future" />
 
-            <p className="md:text:xl font-white sm:text-lg lg:text-2xl">
-              {" "}
+            <p className="text-base text-white sm:text-lg md:text-xl lg:text-2xl">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
 
-            <p className="md:text:xl font-white sm:text-lg lg:text-2xl">
+            <p className="text-base text-white sm:text-lg md:text-xl lg:text-2xl">
               Duis aute irure dolor in reprehenderit in voluptate velit esse
               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
               cupidatat non proident, sunt in culpa qui officia deserunt mollit
@@ -26,8 +25,11 @@ const What = () => {
             </p>
           </div>
         </div>
-        <div className="mx-10 flex w-full items-end justify-start">
-          <Header title="What We Do" />
+
+        <div className="flex w-full items-center justify-center px-4 py-6 md:w-1/2 md:items-end md:justify-start">
+          <div className="max-w-full text-center text-4xl md:text-left lg:text-8xl">
+            <Header title="What We Do" />
+          </div>
         </div>
       </div>
     </>
