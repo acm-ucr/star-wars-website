@@ -27,7 +27,7 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
       <body
-        className={`${lora.className} ${nunito.variable} relative h-full w-full bg-black font-nunito text-white`}
+        className={`${lora.className} ${nunito.variable} relative z-0 h-full w-full bg-black font-nunito text-white`}
       >
         <ReactQueryClientProvider>
           <Navigation />

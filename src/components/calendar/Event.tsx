@@ -1,9 +1,11 @@
 import EventCard from "./EventCard";
+import Wrapped from "./WrappedEvents";
 import { eventList } from "@/data/event";
 
 const Events = () => {
   return (
-    <div className="flex w-full">
+    <div className="flex w-full flex-col gap-5">
+      <Wrapped />
       <div className="flex w-full flex-wrap gap-0">
         {eventList.map((list, index) => (
           <div key={index} className="sm:w-1/2 lg:w-1/3">
