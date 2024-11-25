@@ -1,7 +1,7 @@
 import React from "react";
 import HistoryLanding from "@/components/history/HistoryLanding";
-import PastBoardMembers from "@/components/history/HistoryBoard"; 
-import PastJediMasters from "@/components/history/HistoryPast"; 
+import PastBoardMembers from "@/components/history/HistoryBoard";
+import PastJediMasters from "@/components/history/HistoryPast";
 
 const Page = () => {
   return (
@@ -9,7 +9,6 @@ const Page = () => {
       <HistoryLanding title="CLUB HISTORY" />
       <PastBoardMembers />
       <PastJediMasters />
-
     </div>
   );
 };

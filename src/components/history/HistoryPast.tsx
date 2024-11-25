@@ -1,4 +1,3 @@
-// PastJediMasters.tsx
 import React from "react";
 import Image from "next/image";
 import Card from "../Card";
@@ -9,7 +8,6 @@ import starImage from "@/public/starframeIcon.svg";
 const PastJediMasters = () => {
   return (
     <div className="w-full">
-      {/* Header section with "Past Jedi Masters" title */}
       <div className="relative my-10 flex justify-center">
         <Image
           src={mediumHeaderFrame}
@@ -26,7 +24,6 @@ const PastJediMasters = () => {
         </div>
       </div>
 
-      {/* Cards for Jedi Masters */}
       <div className="flex w-full flex-wrap justify-center gap-20">
         {JEDIITEMS.map((item, index) => (
           <div key={index} className="w-1/4 sm:w-1/4">
