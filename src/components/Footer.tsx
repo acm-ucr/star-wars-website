@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { socialMedia } from "@/data/footerLinks";
+import { socialMedia } from "@/data/footer";
 import Logo from "@/public/swIcon.svg";
 
 const Footer = () => {
@@ -17,7 +17,7 @@ const Footer = () => {
               <Link
                 target={link.target}
                 href={link.href}
-                className="flex flex-row duration-150 hover:scale-110 sm:text-3xl lg:text-5xl"
+                className="flex flex-row text-3xl duration-150 hover:scale-110 md:text-4xl lg:text-5xl"
               >
                 <link.icon />
               </Link>
