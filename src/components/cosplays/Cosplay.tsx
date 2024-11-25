@@ -83,4 +83,3 @@ const Cosplay = () => {
 };
 
 export default Cosplay;
- 
