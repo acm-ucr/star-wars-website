@@ -1,10 +1,8 @@
 export const fetchEvents = async () => {
-  const spreadsheetID = "empty";
-  const range = "Sheet1!A1:D6";
-  const apiKey = "empty";
+  const date = new Date().toISOString();
 
   const response = await fetch(
-    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetID}/values/${range}?key=${apiKey}`,
+    `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&timeMin=${date}&singleEvents=true&orderBy=startTime`,
   );
   if (!response.ok) {
     throw new Error("Failed to Fetch Events");

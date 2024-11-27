@@ -20,19 +20,34 @@ const Events = () => {
     return <span>Error: {error.message}</span>;
   }
 
+  type items = {
+    id: string;
+    summary: string;
+    start: {
+      dateTime: string;
+    };
+    location: string;
+  };
+
   const logo = [logo1, logo2, logo3];
 
   return (
     <div className="flex w-full flex-col gap-5">
       <Wrapped />
       <div className="flex w-full flex-wrap gap-0">
-        {data.values.map((row: string[], index: number) => (
-          <div key={index} className="sm:w-1/2 lg:w-1/3">
+        {data.items.slice(0, 6).map((element: items, index: number) => (
+          <div key={element.id} className="sm:w-1/2 lg:w-1/3">
             <EventCard
-              name={row[0]}
-              date={row[1]}
-              time={row[2]}
-              location={row[3]}
+              name={element.summary}
+              date={new Date(element.start.dateTime).toLocaleDateString(
+                "en-US",
+                { year: "numeric", month: "long", day: "numeric" },
+              )}
+              time={new Date(element.start.dateTime).toLocaleTimeString(
+                "en-US",
+                { timeZone: "UTC" },
+              )}
+              location={element.location}
               logo={logo[index % logo.length]}
             />
           </div>
@@ -41,4 +56,5 @@ const Events = () => {
     </div>
   );
 };
+
 export default Events;
