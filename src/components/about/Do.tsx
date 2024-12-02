@@ -38,8 +38,9 @@ const Do = () => {
       variants={animatePopupStagger}
       initial="hidden"
       whileInView="visible"
+      className="flex flex-col items-center"
     >
-      <motion.div variants={animatePopup}>
+      <motion.div variants={animatePopup} className="w-full md:w-2/5">
         <Header title="What We Do" />
       </motion.div>
 

@@ -42,13 +42,14 @@ const Board = () => {
   };
 
   return (
-    <div className="w-full">
+    <div className="flex w-full flex-col items-center">
       <motion.div
         variants={title}
         initial="hidden"
         whileInView={"visible"}
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
+        className="w-fit md:w-2/5"
       >
         <Header title={"Meet the Board"} />
       </motion.div>
