@@ -1,10 +1,7 @@
-import { FaDiscord, FaInstagram, FaLink } from "react-icons/fa";
-import { IoMail } from "react-icons/io5";
 import discord from "@/public/frame/discord.svg";
 import instagram from "@/public/frame/instagram.svg";
 import email from "@/public/frame/email.svg";
 import highlander from "@/public/frame/highlander.svg";
-import { Mail } from "lucide-react";
 
 export const socialMedia = [
   {
