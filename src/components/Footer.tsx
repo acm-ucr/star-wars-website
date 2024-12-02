@@ -11,15 +11,15 @@ const Footer = () => {
         <Image src={Logo} alt="Logo" className="ml-[10%] w-1/2" />
       </div>
       <div className="ml-auto flex w-auto px-[2.5%]">
-        <div className="flex gap-x-5">
+        <div className="flex gap-x-2">
           {socialMedia.map((link, index) => (
             <div key={index} className="flex items-center text-sw-gold-100">
               <Link
                 target={link.target}
                 href={link.href}
-                className="flex flex-row text-3xl duration-150 hover:scale-110 md:text-4xl lg:text-5xl"
+                className="flex flex-row text-3xl duration-150 hover:scale-110 md:text-4xl lg:text-4xl"
               >
-                <link.icon />
+                <Image src={link.icon} alt="icons" className="w-2/3" />
               </Link>
             </div>
           ))}
