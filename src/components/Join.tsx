@@ -33,7 +33,7 @@ const animatePopup = {
 
 const Join = () => {
   return (
-    <div className="relative mb-[150px] mt-[250px] w-full text-center xl:h-[550px]">
+    <div className="relative mb-[150px] mt-10 w-full text-center md:mt-14 xl:h-[550px]">
       <motion.div
         variants={animatePopupStagger}
         initial="hidden"
