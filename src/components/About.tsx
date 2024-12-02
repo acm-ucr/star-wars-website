@@ -6,8 +6,8 @@ import Title from "./Title";
 const About = () => {
   return (
     <div className="relative flex w-full flex-col gap-x-[10%] md:flex-row lg:flex-row">
-      <div className="flex w-auto flex-col gap-y-4 pl-[12%] pt-[9%]">
-        <p className="ml-2 flex-col bg-gradient-to-b from-sw-gold-100 via-sw-white to-sw-gold-200 bg-clip-text text-4xl font-bold text-transparent md:text-5xl lg:text-6xl">
+      <div className="flex w-auto flex-col items-center gap-y-4 md:items-start md:pl-[12%] md:pt-[9%]">
+        <p className="ml-0 w-2/3 flex-col bg-gradient-to-b from-sw-gold-100 via-sw-white to-sw-gold-200 bg-clip-text text-center text-4xl font-bold text-transparent md:w-auto md:text-left md:text-5xl lg:text-6xl">
           ABOUT
         </p>
         <Image src={swLogo} alt="swLogo" className="flex w-full max-w-64" />

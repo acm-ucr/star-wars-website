@@ -10,7 +10,7 @@ import highlander from "@/public/frame/highlander.svg";
 
 const Join = () => {
   return (
-    <div className="relative mb-[150px] mt-[250px] w-full text-center xl:h-[550px]">
+    <div className="relative my-10 w-full text-center xl:h-[550px]">
       <Image
         src={mediumFrame}
         alt="Medium Frame"
