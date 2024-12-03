@@ -5,7 +5,7 @@ import What from "@/components/What";
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center gap-10">
       <Landing />
       <About />
       <What />
