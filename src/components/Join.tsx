@@ -96,7 +96,7 @@ const Join = () => {
                     whileTap={{ scale: 0.9 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   >
-                    <Link href={item.href}>
+                    <Link href={item.href} target="_blank">
                       <Image
                         src={item.icon}
                         alt="icon"
