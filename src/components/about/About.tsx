@@ -34,7 +34,7 @@ const About = ({ title }: { title: string }) => {
       />
       <motion.div
         variants={animateAbout}
-        className="absolute bottom-12 top-0 flex items-center justify-center"
+        className="absolute bottom-2 top-0 flex items-center justify-center"
       >
         <motion.div
           animate={{ rotate: 360 }}

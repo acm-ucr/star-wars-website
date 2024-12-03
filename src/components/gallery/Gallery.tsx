@@ -11,7 +11,7 @@ const Gallery = ({ title }: { title: string }) => {
         alt="largeFrame"
         className="h-11/12 inset-0 w-11/12 object-cover"
       />
-      <div className="absolute bottom-12 top-0 flex items-center justify-center">
+      <div className="absolute bottom-2 top-0 flex items-center justify-center">
         <Title text={title} />
       </div>
     </div>

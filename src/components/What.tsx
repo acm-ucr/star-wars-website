@@ -47,7 +47,7 @@ const whatAnimation = {
 
 const What = () => {
   return (
-    <div className="relative flex w-full flex-col md:flex-row">
+    <div className="relative flex w-full flex-col-reverse md:flex-row">
       <motion.div
         variants={delayedPopup}
         initial="hidden"
@@ -88,13 +88,13 @@ const What = () => {
 
       <div className="flex w-full items-center justify-center px-4 py-6 md:w-1/2 md:items-end md:justify-start">
         <motion.div
-          className="flex w-full flex-col items-center justify-center text-center text-4xl md:text-left lg:text-8xl"
-          variants={whatAnimation}
-          initial="hidden"
-          whileInView="visible"
-          transition={{ ease: "easeOut", duration: 1 }}
+          className="flex flex-col-reverse items-center justify-center md:flex-col"
+          // variants={whatAnimation}
+          // initial="hidden"
+          // whileInView="visible"
+          // transition={{ ease: "easeOut", duration: 1 }}
         >
-          <Image src={planet} alt="planet" className="w-4/5" />
+          <Image src={planet} alt="planet" className="w-fit md:w-4/5" />
           <Header title="What We Do" />
         </motion.div>
       </div>
