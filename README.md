@@ -11,11 +11,11 @@
 
 ## Figma
 
-[ACM UCR Website Template Figma Design File](https://www.figma.com/design/1Hxc0lli7XNczgamO9JlZk/Star-Wars-Website?node-id=0-1&t=nB1PuneMLAWh8dJY-1)
+[Star Wars Website Figma Design File](https://www.figma.com/design/1Hxc0lli7XNczgamO9JlZk/Star-Wars-Website?node-id=0-1&t=nB1PuneMLAWh8dJY-1)
 
 ## Node.js
 
-ACM UCR Website Template runs on Node.js Version 20.10.0 and higher. Please ensure you have Node.js installed via the [official website](https://nodejs.org/en).
+Star Wars Website Template runs on Node.js Version 20.10.0 and higher. Please ensure you have Node.js installed via the [official website](https://nodejs.org/en).
 
 ## Next.js
 
