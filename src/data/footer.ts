@@ -1,29 +1,35 @@
-import { FaDiscord, FaInstagram, FaLink } from "react-icons/fa";
-import { IoMail } from "react-icons/io5";
+import discord from "@/public/frame/discord.svg";
+import instagram from "@/public/frame/instagram.svg";
+import email from "@/public/frame/email.svg";
+import highlander from "@/public/frame/highlander.svg";
 
 export const socialMedia = [
   {
     href: "https://discord.gg/gvSgtVQDAD",
     label: "Discord Channel",
-    icon: FaDiscord,
+    icon: discord,
     target: "_blank",
+    text: "Discord",
   },
   {
     href: "https://instagram.com/starwarsucr",
     label: "@starwarsucr",
-    icon: FaInstagram,
+    icon: instagram,
     target: "_blank",
+    text: "Instagram",
   },
   {
     href: "mailto:Ucrstarwarsclub@gmail.com",
     label: "Ucrstarwarsclub@gmail.com",
-    icon: IoMail,
+    icon: email,
     target: "_blank",
+    text: "Email",
   },
   {
     href: "https://highlanderlink.ucr.edu/organization/starwarsclubatucr",
     label: "Become a Member",
-    icon: FaLink,
+    icon: highlander,
     target: "_blank",
+    text: "Highlander",
   },
 ];
