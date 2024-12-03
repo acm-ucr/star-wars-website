@@ -3,7 +3,7 @@ import React from "react";
 import Title from "./Title";
 import Header from "./Header";
 import Image from "next/image";
-import planet from "@/public/tatooine.png";
+import planet from "@/public/tatooine.webp";
 import { motion } from "framer-motion";
 
 const delayedPopup = {
