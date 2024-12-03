@@ -2,6 +2,8 @@
 import React from "react";
 import Title from "./Title";
 import Header from "./Header";
+import Image from "next/image";
+import planet from "@/public/tatooine.png";
 import { motion } from "framer-motion";
 
 const delayedPopup = {
@@ -86,12 +88,13 @@ const What = () => {
 
       <div className="flex w-full items-center justify-center px-4 py-6 md:w-1/2 md:items-end md:justify-start">
         <motion.div
-          className="flex w-full justify-center text-center text-4xl md:text-left lg:text-8xl"
+          className="flex w-full flex-col items-center justify-center text-center text-4xl md:text-left lg:text-8xl"
           variants={whatAnimation}
           initial="hidden"
           whileInView="visible"
           transition={{ ease: "easeOut", duration: 1 }}
         >
+          <Image src={planet} alt="planet" className="w-4/5" />
           <Header title="What We Do" />
         </motion.div>
       </div>
