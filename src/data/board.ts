@@ -1,26 +1,38 @@
+import Liam from "@/public/board/Liam.jpg";
+import Jose from "@/public/board/Jose.jpg";
+import Kurt from "@/public/board/Kurt.jpg";
+import Noliver from "@/public/board/Noliver.jpg";
+import Shivam from "@/public/board/Shivam.jpg";
+import Aston from "@/public/board/Aston.png";
 export const ITEMS = [
   {
-    topText: "Position1",
-    bottomText: "Name1",
+    topText: "President",
+    bottomText: "Aston",
+    image: Aston,
   },
   {
-    topText: "Postion2",
-    bottomText: "Name2",
+    topText: "Vice President",
+    bottomText: "Kurt",
+    image: Kurt,
   },
   {
-    topText: "Position3",
-    bottomText: "Name3",
+    topText: "Events",
+    bottomText: "Liam",
+    image: Liam,
   },
   {
-    topText: "Position4",
-    bottomText: "Name4",
+    topText: "Secretary",
+    bottomText: "Shivam",
+    image: Shivam,
   },
   {
-    topText: "Position5",
-    bottomText: "Name5",
+    topText: "Publicity",
+    bottomText: "Jose",
+    image: Jose,
   },
   {
-    topText: "Position6",
-    bottomText: "Name6",
+    topText: "Publicity",
+    bottomText: "Noliver",
+    image: Noliver,
   },
 ];
