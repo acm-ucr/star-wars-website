@@ -7,9 +7,9 @@ import Logo from "@/public/swIcon.svg";
 const Footer = () => {
   return (
     <div className="flex w-full flex-row bg-black">
-      <div className="flex w-auto items-center">
+      <Link href={""} className="flex w-auto items-center">
         <Image src={Logo} alt="Logo" className="ml-[10%] w-1/2" />
-      </div>
+      </Link>
       <div className="ml-auto flex w-auto px-[2.5%]">
         <div className="flex gap-x-2">
           {socialMedia.map((link, index) => (
