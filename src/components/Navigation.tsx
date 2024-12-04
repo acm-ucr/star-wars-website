@@ -87,6 +87,7 @@ const Navigation = () => {
             href="/join"
             className="flex items-center justify-center"
             onClick={() => setIsOpen(false)}
+            target="_blank"
           >
             <Image src={navjoinframe} alt="navframe" className="w-3/6" />
             <p className="absolute mt-2 bg-gradient-to-b from-sw-gold-100 via-sw-white to-sw-gold-200 bg-clip-text text-transparent">

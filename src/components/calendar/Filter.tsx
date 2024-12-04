@@ -9,11 +9,11 @@ const Filter = ({
   onChange,
 }: {
   filters: Array<Background>;
-  onChange: (filter: Background) => void;
+  onChange: (filter: string) => void;
 }) => {
   const [selectedFilter, setSelectedFilter] = useState(filters[0]);
   const handleClick = (filter: Background) => {
-    onChange(filter);
+    onChange(filter.id);
     setSelectedFilter(filter);
     if (filter == filters[1]) {
       if (filter.Image == frame) {
