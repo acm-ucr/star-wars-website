@@ -1,6 +1,7 @@
 import { StaticImageData } from "next/image";
 
-export interface Background {
+export type Background = {
+  id: string;
   Image: StaticImageData;
   Message: string;
-}
+};
