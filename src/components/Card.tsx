@@ -8,7 +8,7 @@ const Card = ({
 }: {
   topText: string;
   bottomText: string;
-  image: StaticImageData;
+  image: StaticImageData | string;
 }) => {
   return (
     <div className="flex flex-col justify-center">

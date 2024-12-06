@@ -6,7 +6,7 @@ import About from "@/components/about/About";
 
 const page = () => {
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-10">
       <About title="About" />
       <Unite />
       <Do />

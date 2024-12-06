@@ -65,7 +65,11 @@ const Creation = () => {
             key={index}
             className="w-1/4 sm:w-1/4"
           >
-            <Card topText={item.topText} bottomText={item.bottomText} />
+            <Card
+              topText={item.topText}
+              bottomText={item.bottomText}
+              image={item.image}
+            />
           </motion.div>
         ))}
       </motion.div>
