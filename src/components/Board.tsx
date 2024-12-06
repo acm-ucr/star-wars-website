@@ -72,6 +72,7 @@ const Board = () => {
               key={index}
               topText={item.topText}
               bottomText={item.bottomText}
+              image={item.image}
             />
           </motion.div>
         ))}

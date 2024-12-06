@@ -49,7 +49,7 @@ const Do = () => {
           variants={animatePopup}
           className="grid grid-cols-1 sm:grid-cols-2"
         >
-          <div className="ml-auto max-w-sm rounded-lg border border-sw-gold-100 bg-gradient-to-r from-[#15121A] from-10% via-[#2C2636] to-[#675980] p-6 text-center shadow-md">
+          <div className="shadow-m ml-auto max-w-sm rounded-lg border border-sw-gold-100 bg-gradient-to-r from-[#15121A] from-10% via-[#2C2636] to-[#675980] p-6 text-center">
             <h2 className="bg-gradient-to-b from-sw-gold-100 via-sw-white to-sw-gold-200 bg-clip-text text-4xl text-transparent">
               EVENTS
             </h2>
@@ -58,9 +58,11 @@ const Do = () => {
                 <Image src={EvBar} alt="mando" />
               </div>
             </div>
-            <p className="font-nunito text-xl text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p className="font-nunito text-base text-white md:text-xl">
+              Join us for thrilling Star Wars-themed events, including movie
+              nights, trivia competitions, and lightsaber duels. Whether you're
+              a Jedi, Sith, or somewhere in between, our events bring fans
+              together for unforgettable adventures.
             </p>
           </div>
           <div className="mr-auto max-w-sm rounded-lg border border-sw-gold-100 bg-gradient-to-r from-[#15121A] from-10% via-[#2C2636] to-[#675980] p-6 text-center shadow-md">
@@ -72,9 +74,10 @@ const Do = () => {
                 <Image src={CoBar} alt="mando" />
               </div>
             </div>
-            <p className="font-nunito text-xl text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p className="font-nunito text-base text-white md:text-xl">
+              Express your love for Star Wars by creating and showcasing your
+              own unique costumes. From iconic characters to original designs,
+              our cosplay community celebrates creativity and craftsmanship.
             </p>
           </div>
         </motion.div>
@@ -91,15 +94,15 @@ const Do = () => {
               <Image src={CreBar} alt="mando" />
             </div>
           </div>
-          <p className="font-nunito text-xl text-white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat
+          <p className="font-nunito text-base text-white md:text-xl">
+            Unleash your imagination with art, writing, and design inspired by
+            the Star Wars universe. Share fanfiction, create stunning
+            illustrations, or collaborate on group projects that bring the
+            galaxy far, far away to life.
           </p>
         </motion.div>
 
-        <motion.div variants={animatePopup} className="">
+        <motion.div variants={animatePopup} className="mt-10 md:mt-0">
           <Button title={"SEE EVENTS"} link={"/events"} />
         </motion.div>
       </div>
