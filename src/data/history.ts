@@ -1,16 +1,11 @@
-export interface Item {
-  topText: string;
-  bottomText: string;
-}
-
-export const ITEMS: Item[] = [
-  { topText: "NAME", bottomText: "GRAD YEAR" },
-  { topText: "NAME", bottomText: "GRAD YEAR" },
-  { topText: "NAME", bottomText: "GRAD YEAR" },
+export const ITEMS = [
+  { topText: "NAME", bottomText: "GRAD YEAR", image: "" },
+  { topText: "NAME", bottomText: "GRAD YEAR", image: "" },
+  { topText: "NAME", bottomText: "GRAD YEAR", image: "" },
 ];
 
-export const JEDIITEMS: Item[] = [
-  { topText: "NAME", bottomText: "" },
-  { topText: "NAME", bottomText: "" },
-  { topText: "NAME", bottomText: "" },
+export const JEDIITEMS = [
+  { topText: "NAME", bottomText: "", image: "" },
+  { topText: "NAME", bottomText: "", image: "" },
+  { topText: "NAME", bottomText: "", image: "" },
 ];

@@ -55,10 +55,12 @@ const About = () => {
             },
           }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Embark on a journey to a galaxy far, far away with the Star Wars Club
+          at UCR! Whether you’re a Jedi, Sith, bounty hunter, or just a fan of
+          podracing, this is the place for you. Connect with fellow enthusiasts,
+          explore the Star Wars universe through watch parties, game nights,
+          trivia challenges, and lightsaber duels, and share your passion for
+          one of the most iconic franchises in history.
         </motion.p>
         <motion.p
           className="md:text:xl text-lg text-white lg:text-2xl"
@@ -71,10 +73,9 @@ const About = () => {
             },
           }}
         >
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.
+          Join us as we dive into the lore, debate fan theories, and celebrate
+          the films, TV series, books, and games that continue to inspire
+          generations. May the Force be with you, always.
         </motion.p>
       </motion.div>
     </motion.div>

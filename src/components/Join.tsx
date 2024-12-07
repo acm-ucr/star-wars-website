@@ -57,10 +57,11 @@ const Join = () => {
             className="flex w-11/12 justify-center md:w-full"
           >
             <div className="leading-[1.6] text-white md:w-[70%] md:text-[20px] xl:w-[45%]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Ready to become part of a galaxy far, far away? The Star Wars Club
+              at UCR welcomes fans of all backgrounds to join our community of
+              Jedi, Sith, and everyone in between. Whether you’re here for the
+              epic battles, deep lore, or just want to connect with fellow Star
+              Wars enthusiasts, there’s a place for you in our galaxy.
             </div>
           </motion.div>
           <motion.div

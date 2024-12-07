@@ -67,10 +67,11 @@ const What = () => {
             initial="hidden"
             whileInView="visible"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            At the Star Wars Club at UCR, we immerse ourselves in the galaxy
+            far, far away through a variety of exciting activities. From hosting
+            movie marathons that span the Skywalker saga and beyond to animated
+            series like The Clone Wars and Rebels, we relive the adventures that
+            shaped generations.
           </motion.div>
           <motion.p
             className="text-base text-white sm:text-lg md:text-xl lg:text-2xl"
@@ -78,10 +79,10 @@ const What = () => {
             initial="hidden"
             whileInView="visible"
           >
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+            At its heart, the Star Wars Club is about building a community where
+            fans can connect, share their love for the franchise, and forge new
+            friendships while creating unforgettable memories. May the Force
+            guide us as we forge the future together!
           </motion.p>
         </motion.div>
       </motion.div>
