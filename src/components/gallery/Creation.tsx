@@ -1,6 +1,6 @@
 "use client";
 import Card from "../Card";
-import { ITEMS } from "@/data/creation";
+import { Creations } from "@/data/images";
 import Header from "../Header";
 import { motion } from "framer-motion";
 const containerVariants = {
@@ -58,7 +58,7 @@ const Creation = () => {
         viewport={{ once: true }}
         className="flex w-full flex-wrap justify-center gap-20"
       >
-        {ITEMS.map((item, index) => (
+        {Creations.map((item, index) => (
           <motion.div
             variants={cardVariants}
             transition={{ duration: 0.9, type: "spring", bounce: 0.2 }}
