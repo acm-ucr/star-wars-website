@@ -4,9 +4,9 @@ import three from "@/public/gallery/sw3.webp";
 import four from "@/public/gallery/sw4.webp";
 import five from "@/public/gallery/sw5.webp";
 
-import six from "@/public/gallery/sw6.jpg";
-import seven from "@/public/gallery/sw7.jpg";
-import eight from "@/public/gallery/sw8.jpg";
+import six from "@/public/gallery/sw6.webp";
+import seven from "@/public/gallery/sw7.webp";
+import eight from "@/public/gallery/sw8.webp";
 
 export const Creations = [
   {
