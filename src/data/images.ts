@@ -1,8 +1,8 @@
-import one from "@/public/gallery/sw.jpg";
-import two from "@/public/gallery/sw2.jpg";
-import three from "@/public/gallery/sw3.jpg";
-import four from "@/public/gallery/sw4.jpg";
-import five from "@/public/gallery/sw5.jpg";
+import one from "@/public/gallery/sw.webp";
+import two from "@/public/gallery/sw2.webp";
+import three from "@/public/gallery/sw3.webp";
+import four from "@/public/gallery/sw4.webp";
+import five from "@/public/gallery/sw5.webp";
 
 import six from "@/public/gallery/sw6.jpg";
 import seven from "@/public/gallery/sw7.jpg";
