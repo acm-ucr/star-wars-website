@@ -4,15 +4,19 @@ import three from "@/public/gallery/sw3.jpg";
 import four from "@/public/gallery/sw4.jpg";
 import five from "@/public/gallery/sw5.jpg";
 
+import six from "@/public/gallery/sw6.jpg";
+import seven from "@/public/gallery/sw7.jpg";
+import eight from "@/public/gallery/sw8.jpg";
+
 export const Creations = [
   {
-    topText: "NAME",
-    bottomText: "CREATION",
+    topText: "",
+    bottomText: "",
     image: one,
   },
   {
-    topText: "NAME",
-    bottomText: "CREATION",
+    topText: "",
+    bottomText: "",
     image: two,
   },
   {
@@ -21,13 +25,13 @@ export const Creations = [
     image: three,
   },
   {
-    topText: "NAME",
-    bottomText: "CREATION",
+    topText: "",
+    bottomText: "",
     image: four,
   },
   {
-    topText: "NAME",
-    bottomText: "CREATION",
+    topText: "",
+    bottomText: "",
     image: five,
   },
   // {
@@ -39,28 +43,28 @@ export const Creations = [
 
 export const Cosplays = [
   {
-    topText: "NAME",
-    bottomText: "CREATION",
-    image: one,
+    topText: "",
+    bottomText: "",
+    image: six,
   },
   {
-    topText: "NAME",
-    bottomText: "CREATION",
-    image: two,
+    topText: "",
+    bottomText: "",
+    image: seven,
   },
   {
-    topText: "NAME",
-    bottomText: "CREATION",
-    image: three,
+    topText: "",
+    bottomText: "",
+    image: eight,
   },
   {
-    topText: "NAME",
-    bottomText: "CREATION",
+    topText: "",
+    bottomText: "",
     image: four,
   },
   {
-    topText: "NAME",
-    bottomText: "CREATION",
+    topText: "",
+    bottomText: "",
     image: five,
   },
   // {
