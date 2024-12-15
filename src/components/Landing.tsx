@@ -1,24 +1,56 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import Button from "./Button";
 import swLogo from "@/public/swLOGO.svg";
 
 const Landing = () => {
   return (
-    <div className="my-20 flex items-center justify-center sm:mr-28 sm:h-screen sm:justify-start md:my-0">
-      <div className="size-2/3 text-center">
-        <h1 className="mb-4 bg-gradient-to-b from-[#DDA82A] via-sw-white to-[#905803] bg-clip-text text-4xl font-bold text-transparent md:text-6xl">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="my-20 flex items-center justify-center sm:mr-28 sm:h-screen sm:justify-start md:my-0"
+    >
+      <motion.div
+        initial={{ scale: 0.9 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="size-2/3 text-center"
+      >
+        <motion.h1
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="mb-4 bg-gradient-to-b from-[#DDA82A] via-sw-white to-[#905803] bg-clip-text text-4xl font-bold text-transparent md:text-6xl"
+        >
           WELCOME TO
-        </h1>
-        <div className="flex items-center justify-center">
+        </motion.h1>
+        <motion.div
+          initial={{ scale: 0.5, rotate: -45, opacity: 0 }}
+          animate={{ scale: 1, rotate: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 0.4 }}
+          className="flex items-center justify-center"
+        >
           <Image src={swLogo} alt="UCR SWC Logo" />
-        </div>
-        <div className="flex flex-row justify-center gap-5 py-5">
-          <Button title={"JOIN"} link={"/about"} />
-          <Button title={"LEARN MORE"} link={"/about"} />
-        </div>
-      </div>
-    </div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.8, staggerChildren: 0.2 }}
+          className="flex flex-row justify-center gap-5 py-5"
+        >
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <Button title={"JOIN"} link={"/about"} />
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <Button title={"LEARN MORE"} link={"/about"} />
+          </motion.div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 };
 
