@@ -40,7 +40,7 @@ const title = {
 };
 const Creation = () => {
   return (
-    <div className="flex w-full flex-col items-center">
+    <div className="mb-10 flex w-full flex-col items-center">
       <motion.div
         variants={title}
         initial="hidden"
@@ -56,14 +56,14 @@ const Creation = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="flex w-full flex-wrap justify-center gap-20"
+        className="flex w-full flex-wrap justify-center gap-10 md:gap-20"
       >
         {Creations.map((item, index) => (
           <motion.div
             variants={cardVariants}
             transition={{ duration: 0.9, type: "spring", bounce: 0.2 }}
             key={index}
-            className="w-1/4 sm:w-1/4"
+            className="w-1/3 sm:w-1/4"
           >
             <Card
               topText={item.topText}

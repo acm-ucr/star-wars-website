@@ -59,7 +59,7 @@ const Board = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="mx-5 flex w-full flex-wrap justify-center gap-20"
+        className="mx-5 flex w-full flex-wrap justify-center gap-8 md:gap-20"
       >
         {ITEMS.map((item, index) => (
           <motion.div

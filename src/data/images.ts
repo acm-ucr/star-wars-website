@@ -20,8 +20,8 @@ export const Creations = [
     image: two,
   },
   {
-    topText: "NAME",
-    bottomText: "CREATION",
+    topText: "",
+    bottomText: "",
     image: three,
   },
   {
@@ -57,16 +57,16 @@ export const Cosplays = [
     bottomText: "",
     image: eight,
   },
-  {
-    topText: "",
-    bottomText: "",
-    image: four,
-  },
-  {
-    topText: "",
-    bottomText: "",
-    image: five,
-  },
+  // {
+  //   topText: "",
+  //   bottomText: "",
+  //   image: four,
+  // },
+  // {
+  //   topText: "",
+  //   bottomText: "",
+  //   image: five,
+  // },
   // {
   //   topText: "NAME",
   //   bottomText: "CREATION",
