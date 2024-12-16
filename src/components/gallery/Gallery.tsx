@@ -32,7 +32,7 @@ const Gallery = ({ title }: { title: string }) => {
       />
       <motion.div
         variants={animateAbout}
-        className="absolute bottom-12 top-0 flex items-center justify-center"
+        className="absolute bottom-0 top-0 flex items-center justify-center md:bottom-8"
       >
         <motion.div
           animate={{ rotate: 360 }}

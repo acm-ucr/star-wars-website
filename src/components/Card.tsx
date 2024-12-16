@@ -12,16 +12,20 @@ const Card = ({
 }) => {
   return (
     <div className="flex flex-col justify-center">
-      <p className="-mb-3 text-3xl font-bold">{topText}</p>
+      <p className="-mb-1 text-lg font-bold md:-mb-3 md:text-3xl">{topText}</p>
       <div className="relative flex items-center justify-center">
-        <Image src={cardframe} alt="cardframe" className="bg-transparent" />
+        <Image
+          src={cardframe}
+          alt="cardframe"
+          className="z-20 bg-transparent"
+        />
         <Image
           src={image}
           alt="board"
-          className="absolute inset-0 m-8 h-5/6 w-4/5 object-cover"
+          className="absolute inset-0 z-10 mt-[2px] h-full w-full object-cover py-[3.5px] md:mt-[4px] md:py-[10px]"
         />
       </div>
-      <p className="self-end text-3xl font-bold">{bottomText}</p>
+      <p className="self-end text-lg font-bold md:text-3xl">{bottomText}</p>
     </div>
   );
 };

@@ -15,8 +15,8 @@ export const ITEMS = [
     name: "GALLERY",
     link: "/gallery",
   },
-  {
-    name: "HISTORY",
-    link: "/history",
-  },
+  // {
+  //   name: "HISTORY",
+  //   link: "/history",
+  // },
 ];

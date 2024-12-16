@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import cosplaysframe from "@/public/frame/cosplaysframe.svg";
 import Card from "../Card";
-import { ITEMS } from "@/data/board";
+import { Cosplays } from "@/data/images";
 import { motion } from "framer-motion";
 
 const Cosplay = () => {
@@ -65,14 +65,14 @@ const Cosplay = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="mx-5 flex w-full flex-wrap justify-center gap-20"
+        className="mx-5 flex w-full flex-wrap justify-center gap-10 md:gap-20"
       >
-        {ITEMS.map((item, index) => (
+        {Cosplays.map((item, index) => (
           <motion.div
             variants={containerVariants}
             transition={{ duration: 0.9, type: "spring", bounce: 0.2 }}
             key={index}
-            className="w-1/4 sm:w-1/4"
+            className="w-1/3 sm:w-1/4"
           >
             <Card
               topText={item.topText}
