@@ -2,8 +2,6 @@
 
 import * as React from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { IoCalendarSharp, IoCloseOutline } from "react-icons/io5";
-import { FaLocationDot } from "react-icons/fa6";
 
 import { DayPicker } from "react-day-picker";
 
