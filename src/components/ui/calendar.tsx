@@ -69,11 +69,11 @@ function Calendar({
           onClick={() => onClick(date)}
           className={cn(
             buttonVariants({ variant: "ghost" }),
-            "h-[7vw] w-[9.7vw] px-1 py-0 font-nunito text-[1vw] aria-selected:bg-sw-gold-100 aria-selected:text-sw-gold-200",
+            "h-[10vw] w-[9.7vw] px-1 py-0 font-nunito text-[2vw] aria-selected:bg-sw-gold-100 aria-selected:text-sw-gold-200 md:h-[7vw] md:text-[1vw]",
             selected
               ? "bg-sw-gold-100 text-black hover:bg-sw-gold-100 hover:text-black"
               : "",
-            isToday ? "bg-muted" : "",
+            isToday ? "bg-sw-gold-100/70" : "",
           )}
         >
           {date.getDate()}
@@ -87,7 +87,7 @@ function Calendar({
                 onClick={() => setPopupEvent(event)}
                 className="mb-[3%] cursor-pointer rounded-lg border border-sw-gold-200 bg-sw-gold-100 text-[0.9vw] text-black"
               >
-                <div className="truncate px-[3%] font-nunito">
+                <div className="truncate px-[3%] font-nunito font-semibold">
                   {new Date(event.startTime).toLocaleTimeString([], {
                     hour: "2-digit",
                     minute: "2-digit",
