@@ -50,7 +50,7 @@ const CalendarCall = () => {
           selected={date}
           onSelect={setDate}
           events={proppedEvents}
-          className="mb-[20vh] ml-[16.5vw] w-[67vw] text-black"
+          className="ml-[16.5vw] w-[67vw] text-black md:mb-[20vh]"
         />
       </div>
     </div>
