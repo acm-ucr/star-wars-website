@@ -15,9 +15,6 @@ type GoogleCalendarEvent = {
 };
 
 export const fetchCalendarEvents = async (): Promise<EventProps[]> => {
-  if (!API_KEY || !CALENDAR_ID) {
-    throw new Error("Google Calendar API key or calendar ID is missing.");
-  }
   const url = `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?key=${API_KEY}`;
   const response = await fetch(url);
 
@@ -56,7 +53,10 @@ export const fetchEvents = async () => {
   const max = new Date(
     new Date().getTime() + 7 * 24 * 60 * 60 * 1000,
   ).toISOString();
-
+  if (!CALENDAR_ID || !API_KEY) {
+    console.warn("Missing Google Calendar API credentials.");
+    return { items: [] };
+  }
   const response = await fetch(
     `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=startTime&timeMin=${min}&timeMax=${max}`,
   );

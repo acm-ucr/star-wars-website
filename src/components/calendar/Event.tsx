@@ -8,6 +8,7 @@ import logo2 from "@/public/eventsIcon/eventslogo2.svg";
 import logo3 from "@/public/eventsIcon/eventslogo3.svg";
 import Filter from "./Filter";
 import { FILTERS } from "@/data/filters";
+import { Loader } from "lucide-react";
 
 type items = {
   id: string;
@@ -47,6 +48,14 @@ const Events = () => {
   return (
     <div className="my-10 flex h-full w-full flex-col gap-5">
       <Filter filters={FILTERS} onChange={handleFilterChange} />
+      {isFetching && (
+        <div className="flex w-full items-center justify-center gap-4 bg-gradient-to-b from-sw-gold-100 via-sw-white to-sw-gold-200 bg-clip-text text-center text-sm font-semibold text-transparent md:text-3xl">
+          Currently fetching data from hyperpace{" "}
+          <span>
+            <Loader className="text-sw-white" />
+          </span>
+        </div>
+      )}
       <div className="flex w-full flex-wrap justify-center gap-10 md:gap-0">
         {filteredEvents.length > 0 ? (
           filteredEvents.slice(0, 6).map((element: items, index: number) => (
