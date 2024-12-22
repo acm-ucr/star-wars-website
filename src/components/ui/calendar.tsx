@@ -113,7 +113,7 @@ function Calendar({
         classNames={{
           month: "space-y-[1vw]",
           caption:
-            "flex justify-center pt-[0.5vh] relative items-center mb-[3vh] bg-sw-gold-100",
+            "flex justify-center pt-[0.5vh] relative items-center mb-[3vh] bg-transparent text-sw-gold-100",
           caption_label: "text-[4vw] font-nunito",
           nav: "space-x-[0.5vw] flex items-center",
           nav_button: cn(
@@ -127,7 +127,7 @@ function Calendar({
             "flex bg-sw-gold-100 -mb-1 w-full aspect-[15/1] rounded-t-xl text-center items-center",
           head_cell: "rounded-md w-[9.7vw] font-nunito text-[1.2vw] text-black",
           row: "flex w-full mt-[0.5vh]",
-          cell: "relative aspect-[4/1] p-0 text-center text-[1vw]",
+          cell: "relative aspect-[4/1] p-0 text-center text-[1vw] bg-black",
           day_today: "bg-accent text-accent-foreground",
           day_outside:
             "day-outside text-muted-foreground aria-selected:bg-accent/50 aria-selected:text-muted-foreground",
@@ -144,16 +144,10 @@ function Calendar({
         }}
         components={{
           IconLeft: () => (
-            <ArrowLeft
-              color="#665045"
-              className="h-[1.5vw] w-[1.5vw] scale-[200%]"
-            />
+            <ArrowLeft className="h-[1.5vw] w-[1.5vw] scale-[200%] text-sw-gold-100" />
           ),
           IconRight: () => (
-            <ArrowRight
-              color="#665045"
-              className="h-[1.5vw] w-[1.5vw] scale-[200%]"
-            />
+            <ArrowRight className="h-[1.5vw] w-[1.5vw] scale-[200%] text-sw-gold-100" />
           ),
           Day: (props) => (
             <CustomDay
