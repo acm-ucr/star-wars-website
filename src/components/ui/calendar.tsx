@@ -127,7 +127,7 @@ function Calendar({
             "flex bg-sw-gold-100 -mb-1 w-full aspect-[15/1] rounded-t-xl text-center items-center",
           head_cell: "rounded-md w-[9.7vw] font-nunito text-[1.2vw] text-black",
           row: "flex w-full mt-[0.5vh]",
-          cell: "relative aspect-[4/1] p-0 text-center text-[1vw] bg-black",
+          cell: "relative aspect-[4/1] p-0 text-center text-[1vw]",
           day_today: "bg-accent text-accent-foreground",
           day_outside:
             "day-outside text-muted-foreground aria-selected:bg-accent/50 aria-selected:text-muted-foreground",
@@ -161,36 +161,28 @@ function Calendar({
       />
 
       {popupEvent && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center">
-          <div className="relative aspect-[8/3] w-[30vw] bg-sw-gold-100 p-[1%] font-nunito text-white shadow-lg">
-            <div className="grid-cols grid grid-flow-col grid-cols-2 items-center">
-              <h2 className="text-[1.5vw] font-bold underline underline-offset-[0.5vw]">
-                {popupEvent.title}
-              </h2>
-              <IoCloseOutline
-                onClick={() => setPopupEvent(null)}
-                className="ml-[90%] scale-[200%] hover:scale-[240%] hover:cursor-pointer active:opacity-50"
-              />
-            </div>
-            <p className="mt-[0.75vw] flex items-center text-[1vw]">
-              <IoCalendarSharp className="mr-[0.5vw] scale-[150%]" />
-              {popupEvent.date.toLocaleDateString(undefined, {
-                weekday: "long",
-                month: "long",
-                day: "numeric",
-              })}
-              {" at "}
-              {new Date(popupEvent.startTime).toLocaleTimeString([], {
-                hour: "2-digit",
-                minute: "2-digit",
-              })}
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-opacity-50 text-black">
+          <div className="w-full max-w-md rounded bg-sw-gold-100 p-5 text-white shadow-md">
+            <h3 className="mb-2 text-xl font-bold">{popupEvent.title}</h3>
+            {popupEvent.date.toLocaleDateString(undefined, {
+              weekday: "long",
+              month: "long",
+              day: "numeric",
+            })}
+            {" at "}
+            {new Date(popupEvent.startTime).toLocaleTimeString([], {
+              hour: "2-digit",
+              minute: "2-digit",
+            })}
+            <p>
+              <strong>Location:</strong> {popupEvent.location || "N/A"}
             </p>
-            <p className="mt-[0.75vw] flex items-center text-[1vw]">
-              <FaLocationDot className="mr-[0.5vw] scale-[150%]" />
-              {popupEvent.location.split(",")[0]}
-              {popupEvent.location === "N/A" ? " " : ", "}
-              {popupEvent.location.split(",")[1]}
-            </p>
+            <button
+              className="mt-4 rounded bg-red-500 px-4 py-2 text-white duration-300 hover:opacity-70"
+              onClick={() => setPopupEvent(null)}
+            >
+              Close
+            </button>
           </div>
         </div>
       )}
