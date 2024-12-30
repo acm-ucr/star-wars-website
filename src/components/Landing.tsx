@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Button from "./Button";
 import swLogo from "@/public/swLOGO.svg";
-import stuff from "@/public/xwing.png";
+import stuff from "@/public/xwing.webp";
 
 const Landing = () => {
   return (
