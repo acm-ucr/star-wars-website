@@ -1,7 +1,9 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   darkMode: ["class"],
   content: ["./src/**/*.{ts,tsx}"],
+
   theme: {
     extend: {
       fontFamily: {
@@ -59,6 +61,7 @@ module.exports = {
         twinkle: "twinkle 1s ease-in-out infinite",
         crawl: "crawl 3s ease-out forwards",
         float: "float 3s ease-in-out infinite",
+        "jiggle-6s": "jiggle 6s ease-in-out infinite",
       },
       keyframes: {
         twinkle: {
@@ -84,8 +87,12 @@ module.exports = {
             transform: "translateY(0)",
           },
           "50%": {
-            transform: "translateY(-20px)",
+            transform: "translateY(-10px)",
           },
+        },
+        jiggle: {
+          "0%": { transform: "translate(0)" },
+          "50%": { transform: "translate(0px, 15px)" },
         },
       },
       borderRadius: {

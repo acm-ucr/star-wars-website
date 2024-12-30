@@ -1,9 +1,17 @@
 import Link from "next/link";
 import frame from "@/public/frame/learnframe.svg";
 import Image from "next/image";
-const Button = ({ title, link }: { title: string; link: string }) => {
+const Button = ({
+  title,
+  link,
+  target,
+}: {
+  title: string;
+  link: string;
+  target: string;
+}) => {
   return (
-    <Link href={link} className="w-full">
+    <Link href={link} className="w-full" target={target}>
       <div className="relative mx-4 inline-block bg-black">
         <Image
           src={frame}

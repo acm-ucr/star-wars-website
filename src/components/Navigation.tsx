@@ -17,7 +17,7 @@ const Navigation = () => {
   return (
     <div className="w-full">
       {/*Desktop*/}
-      <div className="hidden items-center justify-between py-10 md:flex">
+      <div className="hidden items-center justify-between py-8 md:flex">
         <Link href="/" className="flex justify-center">
           <Image
             src={swIcon}
