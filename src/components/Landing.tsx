@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Button from "./Button";
 import swLogo from "@/public/swLOGO.svg";
+import stuff from "@/public/xwing.webp";
 
 const Landing = () => {
   return (
@@ -12,7 +13,7 @@ const Landing = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="my-20 flex items-center justify-center sm:mr-28 sm:h-screen sm:justify-start md:my-0"
+      className="my-10 flex items-center justify-center sm:mr-28 sm:h-screen sm:justify-start md:my-0"
     >
       <motion.div
         initial={{ scale: 0.9 }}
@@ -43,13 +44,22 @@ const Landing = () => {
           className="flex flex-row justify-center gap-5 py-5"
         >
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            <Button title={"JOIN"} link={"/about"} />
+            <Button
+              title={"JOIN"}
+              link={"https://linktr.ee/ucrstarwars"}
+              target="_blank"
+            />
           </motion.div>
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            <Button title={"LEARN MORE"} link={"/about"} />
+            <Button title={"LEARN MORE"} link={"/about"} target="" />
           </motion.div>
         </motion.div>
       </motion.div>
+      <Image
+        src={stuff}
+        alt="x-wing"
+        className="absolute right-4 hidden w-1/3 animate-jiggle-6s md:block"
+      />
     </motion.div>
   );
 };

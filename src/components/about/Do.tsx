@@ -103,7 +103,7 @@ const Do = () => {
         </motion.div>
 
         <motion.div variants={animatePopup} className="mt-10 md:mt-0">
-          <Button title={"SEE EVENTS"} link={"/events"} />
+          <Button title={"SEE EVENTS"} link={"/events"} target="" />
         </motion.div>
       </div>
     </motion.div>
