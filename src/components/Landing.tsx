@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Button from "./Button";
 import swLogo from "@/public/swLOGO.svg";
-import stuff from "@/public/xwing-removebg.png";
+import stuff from "@/public/xwing.png";
 
 const Landing = () => {
   return (
@@ -58,7 +58,7 @@ const Landing = () => {
       <Image
         src={stuff}
         alt="x-wing"
-        className="absolute right-4 hidden w-1/3 md:block"
+        className="absolute right-4 hidden w-1/3 animate-jiggle-6s md:block"
       />
     </motion.div>
   );
