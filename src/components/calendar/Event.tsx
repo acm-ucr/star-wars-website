@@ -36,12 +36,14 @@ const Events = () => {
   const logo = [logo1, logo2, logo3];
 
   const filteredEvents = data.items.filter((event: items) => {
-    const eventDate = new Date(event.start.dateTime);
+    const dateTime = event.start?.dateTime;
+    if (!dateTime) return false;
+
+    const eventDate = new Date(dateTime);
     const now = new Date();
 
     return filterId === "upcoming" ? eventDate >= now : eventDate < now;
   });
-
   const handleFilterChange = (id: string) => {
     setFilterId(id);
   };
@@ -59,7 +61,7 @@ const Events = () => {
       <div className="flex w-full flex-wrap justify-center gap-10 md:gap-0">
         {filteredEvents.length > 0 ? (
           filteredEvents.slice(0, 6).map((element: items, index: number) => (
-            <div key={element.id} className="sm:w-1/2 lg:w-1/3">
+            <div key={index} className="w-4/5 sm:w-1/2 lg:w-1/3">
               <EventCard
                 name={element.summary}
                 date={new Date(element.start.dateTime).toLocaleDateString(
@@ -68,7 +70,11 @@ const Events = () => {
                 )}
                 time={new Date(element.start.dateTime).toLocaleTimeString(
                   "en-US",
-                  { timeZone: "UTC" },
+                  {
+                    hour: "numeric",
+                    minute: "2-digit",
+                    hour12: true,
+                  },
                 )}
                 location={element.location}
                 logo={logo[index % logo.length]}
