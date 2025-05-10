@@ -32,7 +32,7 @@ const Events = () => {
   if (isError) {
     return <span>Error: {error.message}</span>;
   }
-  console.log("data", data);
+
   const logo = [logo1, logo2, logo3];
 
   const filteredEvents = data.items.filter((event: items) => {
